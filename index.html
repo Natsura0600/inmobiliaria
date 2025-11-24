@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Inmobiliaria</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Nova Inmobiliaria</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#propiedades">Propiedades</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero-content">
+            <div class="hero-text">
+                <h1>Encontrá tu próximo hogar con <span>Nova</span></h1>
+                <p>
+                    Departamentos, casas y oficinas en las mejores zonas de la ciudad.  
+                    Asesoramiento personalizado, procesos claros y acompañamiento en cada paso.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#propiedades" class="btn primary">Ver propiedades</a>
+                    <a href="#contacto" class="btn secondary">Agendar una visita</a>
+                </div>
+                <div class="hero-badges">
+                    <span>+200 propiedades</span>
+                    <span>15 años de experiencia</span>
+                    <span>Atención 100% personalizada</span>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-image"></div>
+                <div class="hero-card-body">
+                    <h2>Destacada de la semana</h2>
+                    <p class="hero-card-title">Depto 3 amb. con balcón al frente</p>
+                    <p class="hero-card-location">Palermo, CABA</p>
+                    <p class="hero-card-price">USD 165.000</p>
+                    <div class="hero-card-tags">
+                        <span>70 m²</span>
+                        <span>2 dormitorios</span>
+                        <span>Balcón</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- PROPIEDADES -->
+        <section id="propiedades" class="section properties">
+            <div class="section-header">
+                <h2>Propiedades destacadas</h2>
+                <p>Algunas opciones listas para mudarte hoy mismo.</p>
+            </div>
+
+            <div class="filter-chip-container">
+                <button class="chip chip-active">Todos</button>
+                <button class="chip">Venta</button>
+                <button class="chip">Alquiler</button>
+                <button class="chip">Casas</button>
+                <button class="chip">Departamentos</button>
+                <button class="chip">Oficinas</button>
+            </div>
+
+            <div class="properties-grid">
+                <!-- Card 1 -->
+                <article class="property-card">
+                    <div class="property-image property-image-1"></div>
+                    <div class="property-body">
+                        <h3>Casa moderna con jardín</h3>
+                        <p class="property-location">Villa Urquiza, CABA</p>
+                        <p class="property-price">USD 230.000 · Venta</p>
+                        <div class="property-tags">
+                            <span>4 ambientes</span>
+                            <span>120 m²</span>
+                            <span>Cochera</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="property-card">
+                    <div class="property-image property-image-2"></div>
+                    <div class="property-body">
+                        <h3>Monoambiente amoblado</h3>
+                        <p class="property-location">Recoleta, CABA</p>
+                        <p class="property-price">$ 320.000 · Alquiler</p>
+                        <div class="property-tags">
+                            <span>1 ambiente</span>
+                            <span>35 m²</span>
+                            <span>A estrenar</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="property-card">
+                    <div class="property-image property-image-3"></div>
+                    <div class="property-body">
+                        <h3>Oficina premium</h3>
+                        <p class="property-location">Microcentro, CABA</p>
+                        <p class="property-price">USD 1.200 · Alquiler</p>
+                        <div class="property-tags">
+                            <span>80 m²</span>
+                            <span>Recepción</span>
+                            <span>Sala de reuniones</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="section about">
+            <div class="section-header">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Somos una inmobiliaria enfocada en hacer simple una de las decisiones más importantes: tu hogar.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Acompañamiento integral</h3>
+                    <p>
+                        Te guiamos desde la primera visita hasta la firma final.  
+                        Explicamos cada paso en lenguaje claro y sin letra chica.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3>Datos reales y actualizados</h3>
+                    <p>
+                        Tasaciones basadas en información real del mercado,  
+                        para que no pagues de más ni vendas por menos.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3>Equipo humano</h3>
+                    <p>
+                        Corredores matriculados, equipo legal y soporte post-venta  
+                        para que nunca te sientas solo en el proceso.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section contact">
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <h2>Hablemos de tu próxima mudanza</h2>
+                    <p>
+                        Completá el formulario y un asesor se va a comunicar con vos 
+                        en menos de 24 horas para ayudarte a encontrar la propiedad ideal.
+                    </p>
+                    <ul class="contact-list">
+                        <li>📍 Palermo, Ciudad de Buenos Aires</li>
+                        <li>📞 (011) 1234-5678</li>
+                        <li>✉️ info@novainmobiliaria.com</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="nombre@mail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipo">Estoy buscando</label>
+                            <select id="tipo" name="tipo">
+                                <option value="cualquiera">Cualquier tipo de propiedad</option>
+                                <option value="casa">Casa</option>
+                                <option value="departamento">Departamento</option>
+                                <option value="oficina">Oficina / Local</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="zona">Zona de interés</label>
+                            <input type="text" id="zona" name="zona" placeholder="Ej: Palermo, Recoleta, Belgrano">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos qué estás buscando"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn primary full-width">Enviar consulta</button>
+                    <p class="form-note">No compartimos tus datos con terceros. Sin spam, prometido.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Nova Inmobiliaria · Todos los derechos reservados</p>
+        <p class="footer-small">Sitio demo creado para GitHub Pages</p>
+    </footer>
+</body>
+</html>
