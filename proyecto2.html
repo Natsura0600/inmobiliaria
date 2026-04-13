@@ -19,8 +19,10 @@
   <p style="text-align: center;">El sensor funciona midiendo distancias con un efecto doppler. Una señal va y luego la informacion vuelve. Conectando los cables de esta forma: GND=GND 5V=VCC PIN11=TRIG PIN12=ECHO</p>
     <p>Elementos: Arduino UNO, Cable o Jumpers, Sensor ultrasónico HC-SR04, Tabla Protoboard (Opcional)</p>
 
-  <p style="text-align: center;">
-int trigPin = 11;    // Disparador (Trigger)
+<pre style="background:#111; color:#0f0; padding:10px;">
+  <code>
+function hola() {
+  console.log("int trigPin = 11;    // Disparador (Trigger)
 int echoPin = 12;    // Eco (Echo)
 long duration, cm, inches;
  
@@ -45,7 +47,13 @@ void loop() {
   Serial.print("cm");
   Serial.println();  
   delay(250);
+}");
 }
+  </code>
+</pre>
+  
+  <p style="text-align: center;">
+
 </p>
 
 
