@@ -21,9 +21,8 @@
 
 <pre style="background:#111; color:#0f0; padding:10px;">
   <code>
-function hola() {
-  console.log("int trigPin = 11;    // Disparador (Trigger)
-int echoPin = 12;    // Eco (Echo)
+int trigPin = 11; 
+int echoPin = 12; 
 long duration, cm, inches;
  
 void setup() {
@@ -31,6 +30,7 @@ void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 }
+    
 void loop() {
   digitalWrite(trigPin, LOW);
   delayMicroseconds(5);
@@ -39,6 +39,7 @@ void loop() {
   digitalWrite(trigPin, LOW);
   pinMode(echoPin, INPUT);
   duration = pulseIn(echoPin, HIGH);
+    
   cm = (duration/2) / 29.1;     // Divide entre 29.1 o multiplica por 0.0343
   inches = (duration/2) / 74;   // Divide entre 74 o multiplica por 0.0135
   Serial.print(inches);
@@ -51,10 +52,7 @@ void loop() {
 }
   </code>
 </pre>
-  
-  <p style="text-align: center;">
 
-</p>
 
 
 </section>
