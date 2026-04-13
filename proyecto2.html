@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sensor de UltraSonido</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<canvas id="bg"></canvas>
+<div class="cursor"></div>
+
+<header class="nav">
+  <a href="index.html">Inicio</a>
+</header>
+
+<section class="project">
+  <h1>Sensor de UltraSonido</h1>
+  <p>El sensor funciona midiendo distancias con un efecto doppler. Una señal va y luego la informacion vuelve. Conectando los cables de esta forma: GND=GND 5V=VCC PIN11=TRIG PIN12=ECHO</p>
+    <p>Elementos: Arduino UNO, Cable o Jumpers, Sensor ultrasónico HC-SR04, Tabla Protoboard (Opcional)</p>
+<p>
+int trigPin = 11;    // Disparador (Trigger)
+int echoPin = 12;    // Eco (Echo)
+long duration, cm, inches;
+ 
+void setup() {
+  Serial.begin (9600);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+}
+void loop() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(5);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  pinMode(echoPin, INPUT);
+  duration = pulseIn(echoPin, HIGH);
+  cm = (duration/2) / 29.1;     // Divide entre 29.1 o multiplica por 0.0343
+  inches = (duration/2) / 74;   // Divide entre 74 o multiplica por 0.0135
+  Serial.print(inches);
+  Serial.print("in, ");
+  Serial.print(cm);
+  Serial.print("cm");
+  Serial.println();  
+  delay(250);
+}
+</p>
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
